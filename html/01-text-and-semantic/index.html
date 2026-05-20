@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>01 - Text and Semantic</title>
+    </head>
+    <body>
+        <h1>"What is HTTP and how does the web work?"</h1>
+        <p>
+            Every time you open a website, watch a video online, or send a message through a web app, many technologies work together behind the scenes. One of the most important of these technologies is <strong>HTTP</strong>.
+            <br>
+            <br>
+            <blockquote> <cite>Mozilla: </cite>HTTPS (Hypertext Transfer Protocol Secure) is the encrypted and secure version of the HTTP protocol.</blockquote>
+            <br>
+            <br>
+            In this article, we'll explore what HTTP is, how the web works, and <em>what happens when you visit a website</em>.
+        </p>
+
+        <hr>
+
+        <article>
+            <h2>What is HTTP?</h2>
+            HTTP stands for <mark>HyperText Transfer Protocol</mark>.
+            <br>
+            <br>
+            It is the communication protocol used between a web browser (such as Chrome or Firefox) and a <strong>web server</strong>. HTTP defines the rules for how information is requested and delivered across the internet.
+            <br>
+            <br>
+            When you type a website address into your browser, HTTP helps your device communicate with the server that hosts the website.
+            <h3>Example</h3>
+            When you visit:
+            <br>
+            <code>https://example.com</code>
+            <br>
+            your browser sends an HTTP request to the server, and the server responds with the website’s content.
+        </article>
+
+        <hr>
+        
+        <article>
+            <h2>How does the web work?</h2>
+            The web works through a simple process of <em>requests and responses</em>.
+            
+            <h3>1. The User Makes a Request</h3>
+            <p>
+                A user enters a URL into the browser or clicks a link.
+                <br>
+                Example:
+                <br>
+                <code>https://mywebsite.com</code>
+                <br>
+                The browser prepares a request asking for the website data.
+            </p>
+            
+            <h3>2. DNS Finds the Server</h3>
+            <p>
+                Before connecting to the website, the browser needs to know where the server is located.
+                <br>
+                This is done using <strong><abbr title="Domain Name System">DNS</abbr></strong>, which translates domain names into IP addresses.
+                <br>
+                Example:
+                <br>
+                <code>
+                    google.com → 142.250.190.14
+                </code>
+            </p>
+
+            <h3>3. The Browser Sends an HTTP Request</h3>
+            <p>
+                The browser sends a request to the web server.
+                <br>
+                Example of a simple HTTP request:
+                <br>
+                <pre>
+                    <code>
+                        GET / HTTP/1.1
+                        Host: mywebsite.com
+                    </code>
+                </pre>
+                <br>
+                This request asks the server for the homepage of the website.
+            </p>
+
+            <h3>4. The Server Sends a Response</h3>
+            The server processes the request and returns a response containing:
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Images</li>
+                <li>Other resources</li>
+            </ul>
+            <p>
+                Example of an HTTP response:
+                <br>
+                <pre>
+                    <code>
+                        HTTP/1.1 200 OK
+                        Content-Type: text/html
+                    </code>
+                </pre>
+                <br>
+                The browser then renders the page visually for the user.
+            </p>
+        </article>
+        <footer>
+            <time datetime="2026-05-20">May 20, 2026</time>
+            <br>
+            <small>Article written for educational purposes.</small>
+        </footer>
+    </body>
+</html>

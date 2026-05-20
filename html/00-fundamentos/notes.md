@@ -1,6 +1,41 @@
+# 00 — Fundamentals: Base Structure
+
+## What was learned
+
+| Tag                                                                      | Purpose                                            |
+| ------------------------------------------------------------------------ | -------------------------------------------------- |
+| `<!DOCTYPE html>`                                                        | Declares HTML5. Always first.                      |
+| `<html lang="es">`                                                       | Root of the document. `lang` defines the language. |
+| `<head>`                                                                 | Page metadata. Not visible.                        |
+| `<meta charset="UTF-8">`                                                 | Supports accents, ñ and emojis.                    |
+| `<meta name="viewport" content="width=device-width, initial-scale=1.0">` | Makes the page responsive on mobile.               |
+| `<title>`                                                                | Text shown in the browser tab.                     |
+| `<body>`                                                                 | All visible content goes here.                     |
+
+## Key attributes
+
+- `lang` — document language
+- `charset` — character encoding
+- `name` / `content` — key-value pair for metas
+- `width=device-width` — width equals the device
+- `initial-scale=1.0` — no initial zoom
+
+## Golden rule
+
+Every valid HTML file needs these 3 in the `<head>`:
+
+1. `charset`
+2. `viewport`
+3. `title`
+
+No viewport → broken on mobile.  
+No charset → accents and ñ break.
+
+---
+
 # 00 — Fundamentos: Estructura Base
 
-## Etiquetas aprendidas
+## Lo que se aprendió
 
 | Etiqueta                                                                 | Para qué sirve                               |
 | ------------------------------------------------------------------------ | -------------------------------------------- |
@@ -22,7 +57,8 @@
 
 ## Regla de oro
 
-Todo HTML válido necesita estas 3 metas en el `<head>`:
+Todo HTML válido necesita estas 3 en el `<head>`:
+
 1. `charset`
 2. `viewport`
 3. `title`
