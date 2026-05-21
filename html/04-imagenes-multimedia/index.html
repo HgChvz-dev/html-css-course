@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP in the Real World</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTTP in the Real World</h1>
+
+    <p>
+      HTTP (HyperText Transfer Protocol) is the foundation of communication on the web.
+      It allows browsers and servers to exchange web pages, images, videos, and other resources.
+    </p>
+  </header>
+
+  <main>
+
+    <!-- Figure -->
+    <section>
+      <h2>How HTTP Works</h2>
+
+      <figure>
+        <img 
+          src="https://picsum.photos/800/400"
+          alt="Illustration of communication between a browser and a web server"
+          loading="lazy"
+        >
+
+        <figcaption>
+          A browser sends an HTTP request and the server responds with web content.
+        </figcaption>
+      </figure>
+
+      <p>
+        Every time a user visits a website, the browser communicates with a server using HTTP requests and responses.
+      </p>
+    </section>
+
+    <!-- Picture -->
+    <section>
+      <h2>HTTP on Different Devices</h2>
+
+      <picture>
+
+        <source 
+          media="(max-width: 600px)"
+          srcset="https://picsum.photos/400/300"
+        >
+
+        <source 
+          media="(min-width: 601px)"
+          srcset="https://picsum.photos/900/400"
+        >
+
+        <img 
+          src="https://picsum.photos/800/400"
+          alt="Devices connected through the internet using HTTP"
+          loading="lazy"
+        >
+      </picture>
+
+      <p>
+        Modern websites use responsive images so content loads correctly on mobile phones, tablets, and desktop computers.
+      </p>
+    </section>
+
+    <!-- Video -->
+    <section>
+      <h2>HTTP Video Streaming</h2>
+
+      <video controls width="600">
+        <source 
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        >
+
+        Your browser does not support HTML5 video.
+      </video>
+
+      <p>
+        HTTP allows multimedia files such as videos to be streamed directly through the browser using HTML5 technology.
+      </p>
+    </section>
+
+    <!-- Audio -->
+    <section>
+      <h2>HTTP Audio Delivery</h2>
+
+      <audio controls>
+        <source 
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+        >
+
+        Your browser does not support HTML5 audio.
+      </audio>
+
+      <p>
+        Audio content can also be transferred through HTTP, enabling music, podcasts, and voice recordings on websites.
+      </p>
+    </section>
+
+  </main>
+
+</body>
+</html>
