@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05. Tables</title>
+</head>
+<body>
+    <h1>HTTP Status Codes Reference</h1>
+    <p>HTTP status codes are standard server responses that indicate the result of a client’s request.They are grouped into five categories based on their purpose and meaning.</p>
+
+    <br>
+    <table>
+        <caption>Common HTTP Status Codes and Their Meanings</caption>
+        <thead>
+            <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td>Continue</td>
+                <td>The server received the request headers and the client may continue sending the body.</td>
+                <td rowspan="2">Informational Responses (1xx)</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Switching Protocols</td>
+                <td>The server is switching protocols as requested by the client.</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>OK</td>
+                <td>The request was completed successfully.</td>
+                <td rowspan="3">Successful Responses (2xx)</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>Create</td>
+                <td>A new resource was successfully created.</td>
+            </tr>
+            <tr>
+                <td>204</td>
+                <td>No Content</td>
+                <td>The request succeeded but no content was returned.</td>
+            </tr>
+
+            <tr>
+                <td>301</td>
+                <td>Moved Permanently</td>
+                <td>The resource has been permanently moved to another URL.</td>
+                <td rowspan="3">Redirection Messages (3xx)</td>
+            </tr>
+            <tr>
+                <td>302</td>
+                <td>Found</td>
+                <td>The resource is temporarily located at a different URL.</td>
+            </tr>
+            <tr>
+                <td>304</td>
+                <td>Not Modified</td>
+                <td>The cached version can still be used.</td>
+            </tr>
+
+            <tr>
+                <td>400</td>
+                <td>Bad Request</td>
+                <td>The server could not understand the request.</td>
+                <td rowspan="4">Client Error Responses (4xx)</td>
+            </tr>
+            <tr>
+                <td>401</td>
+                <td>Unauthorized</td>
+                <td>Authentication is required to access the resource.</td>
+            </tr>
+            <tr>
+                <td>403</td>
+                <td>Forbidden</td>
+                <td>The client does not have permission to access the resource.</td>
+            </tr>
+            <tr>
+                <td>404</td>
+                <td>Not Found</td>
+                <td>The requested resource could not be found.</td>
+            </tr>
+
+            <tr>
+                <td>500</td>
+                <td>Internal Server Error</td>
+                <td>The server encountered an unexpected condition.</td>
+                <td rowspan="3">Server Error Responses (5xx)</td>
+            </tr>
+            <tr>
+                <td>502 </td>
+                <td>Bad Gateway</td>
+                <td>The server received an invalid response from another server.</td>
+            </tr>
+            <tr>
+                <td>503</td>
+                <td>Service Unavailable</td>
+                <td>The server is temporarily unavailable.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Listed</td>
+                <td colspan="2">15 status codes across 5 categories</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
