@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03. Links and navegation</title>
+</head>
+<body>
+    <h1>HTTP Resources</h1>
+    <p>
+        HTTP defines a set of request methods to indicate <strong>the purpose of the request and what is expected if the request is successful</strong>. Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs. Each request method has its own semantics, but some characteristics are shared across multiple methods, specifically request methods can be safe, idempotent, or cacheable.
+    </p>
+    <nav>
+        <a href="#methods" title="Methods">HTTP Methods</a>
+        <a href="#steps" title="Steps">Steps to Make an HTTP Request</a>
+        <a href="#status" title="Status">HTTP Response status code</a>
+    </nav>
+    <section id="methods">
+        <article>
+            <h2>GET</h2>
+            <p>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should not contain a request content.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/GET" target="_blank" rel="noopener noreferrer">More about method GET</a>
+        </article>
+
+        <article>
+            <h2>POST</h2>
+            <p>The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST" target="_blank" rel="noopener noreferrer">More about method POST</a>
+        </article>
+
+        <article>
+            <h2>PUT</h2>
+            <p>The PUT method replaces all current representations of the target resource with the request content.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/PUT" target="_blank" rel="noopener noreferrer">More about method PUT</a>
+        </article>
+
+        <article>
+            <h2>DELETE</h2>
+            <p>The DELETE method deletes the specified resource.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/DELETE" target="_blank" rel="noopener noreferrer">More about method DELETE</a>
+        </article>
+    </section>
+
+    <section id="steps">
+        <h2>Steps to Make an HTTP Request</h2>
+        <ol>
+            <li>User enters a URL in the browser.</li>
+            <li>The browser looks up the domain using DNS.</li>
+            <li>The browser sends an HTTP request to the server.</li>
+            <li>The server processes the request.</li>
+            <li>The server returns an HTTP response.</li>
+            <li>The browser displays the response to the user.</li>
+        </ol>
+    </section>
+    
+    <section id="status">
+        <h2>HTTP Response Status Codes</h2>
+        <ol>
+            <li>Informational responses (100 – 199)</li>
+            <li>Successful responses (200 – 299)</li>
+            <li>Redirection messages (300 – 399)</li>
+            <li>Client error responses (400 – 499)</li>
+            <li>Server error responses (500 – 599)</li>
+        </ol>
+    </section>
+
+    <footer>
+        <h3>Contact</h3>
+        <a href="mailto:hugoalfredochavezlopez@gmail.com" title="Send email"> Send me a email</a>
+    </footer>
+</body>
+</html>
