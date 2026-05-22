@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07. Forms 2</title>
+</head>
+<body>
+
+    <h1>API Access Registration</h1>
+
+    <p>
+        Register to access the API platform and configure your developer account.
+    </p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Client Registration Form</legend>
+
+            <label for="name">Full Name</label>
+            <br>
+
+            <input 
+                type="text"
+                id="name"
+                name="name"
+                minlength="3"
+                maxlength="50"
+                placeholder="John Doe"
+                required
+            >
+
+            <br><br>
+
+            <label for="email">Email Address</label>
+            <br>
+
+            <input 
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="john@example.com"
+                required
+            >
+
+            <br><br>
+
+            <label for="password">Password</label>
+            <br>
+
+            <input 
+                type="password"
+                id="password"
+                name="password"
+                pattern=".{8,}"
+                placeholder="Minimum 8 characters"
+                required
+            >
+
+            <br><br>
+
+            <label for="requests">Number of Requests per Minute</label>
+            <br>
+
+            <input 
+                type="number"
+                id="requests"
+                name="requests"
+                min="10"
+                max="1000"
+                step="10"
+                value="10"
+            >
+
+            <br><br>
+
+            <label for="start-date">Start Date</label>
+            <br>
+
+            <input 
+                type="date"
+                id="start-date"
+                name="start-date"
+                min="2026-05-22"
+            >
+
+            <br><br>
+
+            <label for="plan">API Plan</label>
+            <br>
+
+            <select name="plan" id="plan">
+                <option value="free" selected>Free Plan</option>
+                <option value="basic">Basic Plan</option>
+                <option value="premium">Premium Plan</option>
+            </select>
+
+            <br><br>
+
+            <label>
+                <input type="checkbox" checked>
+                Accept Terms and Conditions
+            </label>
+
+            <br><br>
+
+            <label for="free-plan">Current Free Plan</label>
+            <br>
+
+            <input 
+                type="text"
+                id="free-plan"
+                value="Starter API Access"
+                readonly
+            >
+
+            <br><br>
+
+            <label for="premium-features">Premium Features</label>
+            <br>
+
+            <input 
+                type="text"
+                id="premium-features"
+                value="Advanced Analytics and Unlimited Requests"
+                disabled
+            >
+
+            <br><br>
+
+            <label for="config-file">Upload Configuration Files</label>
+            <br>
+
+            <input 
+                type="file"
+                id="config-file"
+                name="config-file"
+                accept=".json,.yaml"
+                multiple
+            >
+
+            <br><br>
+
+            <button type="submit">Register API Access</button>
+
+            <button type="reset">Clear Form</button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
