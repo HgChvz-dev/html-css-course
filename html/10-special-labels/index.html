@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP API Dashboard</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTTP API Dashboard</h1>
+        <p>
+            Monitor API usage, search endpoints, and learn HTTP concepts.
+        </p>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Search API Documentation</h2>
+
+            <search>
+                <form action="#">
+                    <input 
+                        type="search"
+                        name="search"
+                        placeholder="Search endpoints or HTTP methods..."
+                    >
+
+                    <button type="submit">Search</button>
+                </form>
+            </search>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>API Endpoint Suggestions</h2>
+
+            <label for="endpoint">Choose an endpoint:</label>
+
+            <input 
+                list="endpoints"
+                id="endpoint"
+                name="endpoint"
+                placeholder="/api/users"
+            >
+
+            <datalist id="endpoints">
+                <option value="/api/users">
+                <option value="/api/products">
+                <option value="/api/orders">
+                <option value="/api/auth/login">
+                <option value="/api/reports">
+            </datalist>
+
+        </section>
+
+        <hr>
+
+        <!-- Progress -->
+        <section>
+
+            <h2>Request Progress</h2>
+
+            <p>API request loading progress:</p>
+
+            <progress value="70" max="100"></progress>
+
+            <p>70% completed</p>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>API Usage</h2>
+
+            <p>Monthly API requests used:</p>
+
+            <meter 
+                value="650"
+                min="0"
+                max="1000"
+                low="300"
+                high="800"
+                optimum="500"
+            >
+                650 out of 1000 requests used
+            </meter>
+
+            <p>650 / 1000 requests consumed</p>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>Request Cost Calculator</h2>
+
+            <form oninput="result.value = requests.value * 0.05">
+
+                <label for="requests">
+                    Number of API Requests:
+                </label>
+
+                <input 
+                    type="number"
+                    id="requests"
+                    name="requests"
+                    value="10"
+                >
+
+                <p>
+                    Estimated Cost:
+                    $<output name="result">0.50</output>
+                </p>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>HTTP FAQ</h2>
+
+            <details>
+                <summary>What is HTTP?</summary>
+
+                <p>
+                    HTTP stands for HyperText Transfer Protocol and is used for communication between clients and servers.
+                </p>
+            </details>
+
+            <details>
+                <summary>What is an API?</summary>
+
+                <p>
+                    An API allows applications to communicate and exchange data programmatically.
+                </p>
+            </details>
+
+            <details>
+                <summary>What does status code 404 mean?</summary>
+
+                <p>
+                    A 404 status code means the requested resource could not be found on the server.
+                </p>
+            </details>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>API Confirmation Dialog</h2>
+
+            <button onclick="document.getElementById('confirmDialog').showModal()">
+                Open Confirmation
+            </button>
+
+            <dialog id="confirmDialog">
+
+                <h3>Request Confirmation</h3>
+
+                <p>
+                    Your API request has been successfully submitted.
+                </p>
+
+                <button onclick="document.getElementById('confirmDialog').close()">
+                    Close
+                </button>
+
+            </dialog>
+
+            <template id="endpoint-card">
+                <div>
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </template>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2025 HTTP API Dashboard
+        </p>
+
+    </footer>
+
+</body>
+</html>
