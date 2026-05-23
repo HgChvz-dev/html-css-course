@@ -106,6 +106,310 @@
 
     </header>
 
-    
+    <main>
+        <section id="intro">
+
+            <h2>Introduction to HTTP</h2>
+
+            <p>
+                <abbr title="HyperText Transfer Protocol">
+                    HTTP
+                </abbr>
+                is the foundation of communication on the web.
+            </p>
+
+            <blockquote>
+                “HTTP is the protocol that powers data communication across the World Wide Web.”
+            </blockquote>
+
+            <cite>
+                World Wide Web Consortium
+            </cite>
+
+            <p>
+                Published on
+                <time datetime="2025-08-04">
+                    August 4, 2025
+                </time>
+            </p>
+
+            <p>
+                Modern applications depend on
+                <mark>
+                    APIs, HTTP requests, and secure communication
+                </mark>
+                to exchange information.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section id="methods">
+
+            <h2>HTTP Methods</h2>
+
+            <table border="1">
+
+                <caption>
+                    Common HTTP Request Methods
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Purpose</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>GET</td>
+                        <td>Retrieve</td>
+                        <td>Fetch resources from a server</td>
+                    </tr>
+
+                    <tr>
+                        <td>POST</td>
+                        <td>Create</td>
+                        <td>Send new data to the server</td>
+                    </tr>
+
+                    <tr>
+                        <td>PUT</td>
+                        <td>Update</td>
+                        <td>Replace an existing resource</td>
+                    </tr>
+
+                    <tr>
+                        <td>DELETE</td>
+                        <td>Remove</td>
+                        <td>Delete a resource from the server</td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            HTTP methods define actions between clients and servers.
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <section id="status">
+
+            <h2>HTTP Status Codes</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Code</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td rowspan="2">Success</td>
+                        <td>200</td>
+                        <td>OK</td>
+                    </tr>
+
+                    <tr>
+                        <td>201</td>
+                        <td>Created</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Client Error</td>
+                        <td>400</td>
+                        <td>Bad Request</td>
+                    </tr>
+
+                    <tr>
+                        <td>404</td>
+                        <td>Not Found</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Server Error</td>
+                        <td>500</td>
+                        <td>Internal Server Error</td>
+                    </tr>
+
+                    <tr>
+                        <td>503</td>
+                        <td>Service Unavailable</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+                <section id="request">
+
+            <h2>HTTP Request Simulator</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>
+                        API Request Form
+                    </legend>
+
+                    <label for="method">
+                        HTTP Method
+                    </label>
+
+                    <select id="method" name="method">
+                        <option>GET</option>
+                        <option>POST</option>
+                        <option>PUT</option>
+                        <option>DELETE</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="url">
+                        Request URL
+                    </label>
+
+                    <input 
+                        type="url"
+                        id="url"
+                        name="url"
+                        required
+                        placeholder="https://api.example.com"
+                    >
+
+                    <br><br>
+
+                    <label for="body">
+                        Request Body
+                    </label>
+
+                    <textarea 
+                        id="body"
+                        name="body"
+                        rows="5"
+                        cols="40"
+                    ></textarea>
+
+                    <br><br>
+
+                    <label>
+                        <input type="checkbox" checked>
+                        Enable HTTPS
+                    </label>
+
+                    <br><br>
+
+                    <button 
+                        type="submit"
+                        aria-label="Send HTTP request"
+                    >
+                        Send Request
+                    </button>
+
+                    <button 
+                        type="reset"
+                        aria-label="Clear form"
+                    >
+                        Clear
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+            <div aria-live="polite">
+                Request ready to be submitted.
+            </div>
+
+            <div role="alert">
+                Error: Invalid endpoint URL.
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section id="media">
+
+            <h2>HTTP Multimedia Resources</h2>
+
+            <figure>
+
+                <img 
+                    src="https://picsum.photos/800/400"
+                    alt="Illustration of internet communication"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    Client and server communication using HTTP.
+                </figcaption>
+
+            </figure>
+
+            <picture>
+
+                <source 
+                    media="(max-width: 600px)"
+                    srcset="https://picsum.photos/400/300"
+                >
+
+                <source 
+                    media="(min-width: 601px)"
+                    srcset="https://picsum.photos/900/400"
+                >
+
+                <img 
+                    src="https://picsum.photos/800/400"
+                    alt="Responsive web communication image"
+                    loading="lazy"
+                >
+
+            </picture>
+
+            <br><br>
+
+            <video controls width="500">
+
+                <source 
+                    src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    type="video/mp4"
+                >
+
+            </video>
+
+            <br><br>
+
+            <audio controls>
+
+                <source 
+                    src="https://www.w3schools.com/html/horse.mp3"
+                    type="audio/mpeg"
+                >
+
+            </audio>
+
+        </section>
+    </main>    
 </body>
 </html>
